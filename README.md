@@ -1,4 +1,6 @@
-#dcffe4, $bg-green-light
+<div class="text-blue mb-2">
+  .text-blue on white
+</div>
 # Anti-kidnapping-system
 ## description:
 ### 1)-Introduction on problematic:
