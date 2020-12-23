@@ -2,3 +2,5 @@
 
 # Introduction
 New debates have recently emerged on an “AI turn” for digital health (Kerr et al., 2018; Triantafyllidis and Tsanas, 2019). This technology horizon-scanning article offers an analysis of the ways in which biotechnology and digital health innovations are being coproduced by mainstreaming of artificial intelligence (AI), the Internet of Things (IoT), and cyber-physical systems (CPS) in 21st century integrative biology and life sciences.
+
+link paper :https://www.liebertpub.com/doi/full/10.1089/omi.2019.0069
