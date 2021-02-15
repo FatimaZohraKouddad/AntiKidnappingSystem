@@ -1,0 +1,227 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{graphics}
+
+%\usepackage[english]{babel}															
+\usepackage[english]{babel}
+\usepackage{indentfirst}		% for indent
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url, array}
+\usepackage[num,abnt-repeated-author-omit=yes]{abntex2cite}
+
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+%\date{\today}
+
+%%% Begin document
+\begin{document}
+		
+{\flushleft\horrule{2pt}
+\begin{center}
+{\includegraphics[height=0.09\textwidth]{logo_english.png}} 
+\begin{tabular}{ m{1.8cm} m{10cm} m{1.8cm}}
+\begin{center}
+\end{center}
+&
+\begin{center} 
+{\small
+{Adrar University} \\
+{Faculty of Science and Technology} \\
+{Department of Mathematics and Computer Science}} \\
+
+\end{center}
+&
+
+\begin{center}
+\end{center}
+\end{tabular}
+\end{center}
+\flushleft \horrule{2pt}\\[1cm]
+}
+
+
+\begin{center}
+
+{
+\huge  
+Initiation to Research (Course) \\
+\vspace{0.2cm}
+2\textsuperscript{nd} Year Master (S3) \\
+\vspace{0.2cm}
+2020/2021}\\
+
+\vspace{1cm}
+
+{
+\Huge   
+\textbf{Healthcare Monitoring System Based On IoT }}\\
+\vspace{1cm}
+
+%Domain: Mathematics and Computer Science \\
+%Major: Informatics - Intelligent Systems \\
+{
+\Large
+\textbf{Fatima Zohra KOUDDAD \footnote{Email:kouddadfatimazohra@gamil.com} }}\\
+\vspace{3cm}
+
+{
+\large
+\textbf{Instructor: Dr. Abdelghani DAHOU \footnote{Email: dahou.abdghani@univ-adrar.edu.dz}}}\\
+\today
+\end{center}
+\pagebreak
+\tableofcontents
+\pagebreak
+\listoffigures
+\pagebreak
+\listoftables
+\pagebreak
+
+
+
+
+
+\section{Abstract}
+The Internet of things has shown its effectiveness in various fields, as example: Business, smart home,automotive, smart city...etc. 
+Which made all things connected to each other depending on the Internet, and the latter attracted the attention of researchers and made them apply it in the field of healthcare and develop it more. 
+The Internet of Things (IoT) has been used extensively to link and provide usable medical services.Reliable,accessible and intelligent healthcare facilities for elderly people and chronically ill patients or people in general. 
+The main objective of this paper is to describe and clarify the applications of IoT used in the healthcare sector and The design of a real-time health monitoring system.
+
+
+\section{Introduction}
+Internet of Things (IoT) is a rapidly evolving technology to share data and automation. It requires sensors, Cyber systems interact collaboratively over the Internet at each point to meet humans in real time. The advances in innovation on the Internet have made possible healthcare transmission techniques[3]. \\
+To set up a monitoring healthcare system using Internet of Things technology, a lot of data is required and successful methods must be employed in data analysis and critical data extraction to assess the patient's condition and the type of network that must be used in this system to get information and interpret it in real-time. These are three of the major challenges facing scientists using internet technologies to obtain effective and precise medical diagnostic outcomes.And through that, The use of internet of things (IoT) technology with intelligentize medical service systems is a promising way of alleviating the above described problem[1].\\
+This proposed research is a complement or development of similar works in the same field. so in this paper, we suggest a model to monitoring healthcare based on IoT by using the tools " hardware, software, methodologies and technologies" and we'll talk briefly about it.\\
+This is the structure of the paper: Section 2 focuses on the use of IoT technology, including recognition, communication and Place, sensing . Section 3 presents all intelligent medical devices
+And systems. Section 4 theory and method/methodology. Section 5 present related work, and in final section we'll present project timeline .
+
+\section{Enabling technologies of IoT}
+Today, software and hardware systems are increasingly flexible and inexpensive for sensing, communication and decision making activities. Enabling technologies are indispensable to facilitate human inventions in various IoT applications[1].
+\begin{itemize}
+     \textbf{3.1:Identification technology:}A realistic IoT may include several nodes, each of which that can generate data and any allowed node No matter where it is located, access to knowledge. It's for this reason It is necessary to effectively locate and classify nodes. The identification mechanism is intended to assign a unique identity (UID) to a relevant person, so that the exchange of information through this node is transparent[1].\\
+    \textbf{3.2:Communication and location technologies:}Communication technologies enable networking of an IoT-based healthcare subsystem infrastructure and can be categorized as short-haul and long-haul technologies. This analysis will only deal with short-distance technology, however, because of the fact that long-distance technologies mostly include daily communication media like the internet or cell phones. In most cases, wireless technologies such as Bluetooth, RFID, WiFi, the IRDA, Ultra-Widband (UWB, ZigBee) etc. are a central component of the short-distance communications system[1].\\
+    \textbf{3.3:Location technology:}In order to map and classify real-time location systems (RTLS).
+Objects positions. RTLS monitors the situation in health applications
+Process for treatment safely, helps to reconfigure the health care system on the basis of capital allocation. The most important RTLS is the Global Positioning System (GPS), a satellite-based navigation system that can identify objects at all times of the weather, as long as four or more satellites can receive open viewing lines. A satellite system for the location of ambulances, patients, physicians etc may be used for the health care system[1].The usability of systems such as GPS is worth remembering.
+Or China's Beidou System (BSS) is usually weak in an indoor setting because the building structure hampers satellite signal transmission. GPS cannot be used to construct a proper medical system. In order to improve location accuracy, it is important to make up for GPS with local positioning systems (LPSs). An LPS locates an object on the basis of radio signal measurements which move between objects and an array of the recipients predeployed. In order to enforce LPS, the aforementioned short-haul communication technologies are necessary.\\
+    \textbf{3.4. Sensing technologies:}Sensing technology is pivotal to the acquisition of numerous physiological parameters about a patient, so that a doctor can adequately diagnose the illness and recommend the treatments. Furthermore, new progress of sensing technologies allows a continual data acquisition from patients, facilitating the improvementof treatment outcomes and the reduction of healthcare costs[1].
+\end{itemize}
+
+\section{Smart healthcare devices and systems}
+\begin{itemize}
+    \textbf{4.1: Smart healthcare devices: }Smart health care systems typically incorporate IoT-sensing technologies that allow patients to be tracked by the healthcare system[1].
+    \textbf{4.2: Smart healthcare system:}Includes smart sensors, a smart healthcare system normally
+Separate remote and network. It can include multidimensional surveillance and fundamental treatment recommendations. A smart healthcare system can be used in the home, in societies or even widely in the world depending on the requirements[1].
+\end{itemize}
+
+\section{THEORY AND METHOD/METHODOLOGY}
+In this proposal, we used a simple model that includes the basic stages of a human health surveillance system.(see fig.1)
+\chapter{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=6in]{fig1.png}
+        \caption{Proposal Model }
+        \label{fig: }
+    \end{figure}
+\textbf{The description:}So that the equipment senses a person's heartbeat and temperature and then sends it to the investigation stage, which in turn checks some of the conditions mentioned in it and then through the database, he will show the current result according to the conditions mentioned in the investigation phase.
+
+\section{related work}
+There is a lot of work related to our research, so that there is only a small difference to identify the problem or the application on which the growth was suggested. For example, you can see references [1,2,3].
+
+
+\section{Project Timeline}
+A description : In this work, we divided the project into tasks, each one has a proper duration to complete the main aim (see Table7.1 and Figure7.1) .
+\\
+\\
+\\
+\\
+
+\textbf{The schedule and Gantt chart: }
+\\
+\chapter{}
+    \begin{table}[ht]
+        \centering
+        \begin{tabular}{|l|c|}
+        \hline
+            Tasks & Duration \\
+             \hline
+            task 1:Literature Survey.  & 8 Wks \\
+                  t 1.1: literarure search. & 4 Wks \\
+                  t 1.2: literarure review. & 4 Wks \\
+            \hline      
+            task 2:develop an IoT model.  & 10 Wks \\ 
+                  t 2.1: investigate and evalute the system that used IoT technologie. & 4 Wks \\
+                  t 2.2: design IoT model. & 4 Wks \\
+                  t 2.3: develop and test IoTmodel. & 2 Wks \\
+            \hline
+            task 3: collect data. & 2 Wks \\
+            \hline
+            task 4: Evaluate and validate the model. & 10 Wks \\
+               t 4.1:use data model collected. & 3 Wks \\
+                  t 4.2:train IoT model created. & 1 Wks \\
+                  t 4.3:Analyses. & 6 Wks \\
+                    t 4.3.1: review statustical test. & 2 Wks\\
+                    t 4.3.2:analyses and evaluate. & 4 Wks\\
+            \hline
+            task 5: Complete report. & 4 Wks \\
+            \hline
+        \end{tabular}
+        \caption{Schedule the distribution of tasks}
+        \label{tab:my_label}
+    \end{table}
+
+\chapter{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=6in]{ganttimage.png}
+        \caption{Gantt chart project }
+        \label{fig: Gantt chart of the project }
+    \end{figure}
+    
+\pagebreak
+
+\maketitle
+ \\
+ A health monitoring system for vital signs using IoT \cite{SWAROOP2019116}
+\\
+A Survey of Healthcare Internet of Things (HIoT): A Clinical Perspective \cite{8863483}
+\\
+ The internet of things in healthcare: An overview \cite{YIN20163}
+ \\
+ 
+
+\bibliographystyle{siam}
+\bibliography{bibliography}
+
+\end{document}
